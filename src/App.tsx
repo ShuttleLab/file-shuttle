@@ -18,10 +18,10 @@ function App() {
         <div className="inline-flex items-center justify-center p-5 bg-white/20 backdrop-blur-md rounded-[2rem] mb-6 ring-4 ring-white/30 shadow-2xl animate-bounce-slow">
           <Cloud className="w-16 h-16 text-white fill-white" />
         </div>
-        <h1 className="text-7xl font-black mb-4 tracking-tighter flex items-center justify-center gap-3 drop-shadow-lg">
+        <h1 className="text-9xl font-black mb-4 tracking-tighter flex items-center justify-center gap-3 drop-shadow-lg">
           文件穿梭机
         </h1>
-        <p className="text-2xl text-white/90 font-bold tracking-wide drop-shadow-md">极速 · 安全 · 阅后即焚</p>
+        <p className="text-33xl text-white/90 font-bold tracking-wide drop-shadow-md">极速 · 安全 · 私密</p>
       </div>
 
       {/* 主容器 */}
@@ -194,7 +194,7 @@ const UploadView = () => {
             {copied ? <Check className="w-10 h-10" /> : <Copy className="w-10 h-10" />}
           </div>
         </div>
-        <p className="text-gray-400 font-bold">请妥善保存取件码，文件只能保存3天</p>
+        <p className="text-gray-400 font-bold">请妥善保存取件码，文件3天后自动销毁</p>
         <button 
           onClick={() => { setUploadCode(null); setIsUploading(false); setProgress(0); }}
           className="min-h-[4rem] w-full py-6 text-gray-400 hover:text-violet-600 font-black text-lg transition-colors flex items-center justify-center gap-2 hover:bg-white/50 rounded-3xl"
@@ -334,7 +334,7 @@ const DownloadView = () => {
           <AlertCircle className="w-8 h-8 flex-shrink-0" /> {error}
         </div>
       )}
-      <p className="text-gray-400 font-bold text-center">文件只能保存3天，请及时保存</p>
+      <p className="text-gray-400 font-bold text-center">文件3天后自动销毁，请及时保存</p>
       <button
         style={{ background: 'linear-gradient(135deg, #b9da72ff, #7ef28dff)' }}
         type="submit"
