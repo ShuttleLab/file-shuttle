@@ -2,6 +2,8 @@
 
 A serverless file transfer application powered by Cloudflare Pages, R2, and KV.
 
+preview（预览）[file.videotools.cn](https://file.videotools.cn)
+
 ## 🚀 Prerequisites
 
 You need a [Cloudflare](https://dash.cloudflare.com/) account.
@@ -56,9 +58,3 @@ npx wrangler pages dev . -- npm run dev
     *   Build output directory: `dist`
 5.  **Environment Variables**:
     *   Add your `R2_...` variables and `FILE_SHUTTLE_KV` binding in the Cloudflare Pages settings dashboard after the project is created.
-
-
-
-
-
-npx wrangler pages dev -- npm run dev
