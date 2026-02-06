@@ -12,6 +12,7 @@ import {
   Heart,
   Share2,
   Info,
+  Github,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -132,13 +133,24 @@ export default function AboutPage() {
               {t.back}
             </Link>
           </Button>
-          <Button
-            variant="outline"
-            size="default"
-            onClick={() => setLang(lang === "zh" ? "en" : "zh")}
-          >
-            {t.langButton}
-          </Button>
+          <div className="flex items-center gap-3">
+            <a
+              href="https://github.com/ShuttleLab/file-shuttle"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="rounded-lg p-2 text-muted-foreground transition-colors hover:bg-accent hover:text-accent-foreground"
+              aria-label="GitHub"
+            >
+              <Github className="size-5" />
+            </a>
+            <Button
+              variant="outline"
+              size="default"
+              onClick={() => setLang(lang === "zh" ? "en" : "zh")}
+            >
+              {t.langButton}
+            </Button>
+          </div>
         </div>
       </header>
 
@@ -259,7 +271,7 @@ export default function AboutPage() {
                 <Button
                   variant="secondary"
                   size="lg"
-                  className="bg-background text-foreground hover:bg-muted text-base font-semibold"
+                  className="bg-background text-foreground hover:bg-muted text-base font-semibold transition-transform duration-200 hover:scale-105 hover:shadow-lg active:scale-100"
                 >
                   <Heart className="size-5 mr-2" />
                   {t.donateButton}
@@ -327,7 +339,7 @@ export default function AboutPage() {
             <Button
               variant="outline"
               size="lg"
-              className="border-2 border-primary-foreground/50 text-primary-foreground hover:bg-primary-foreground/10 text-base font-semibold"
+              className="border-2 border-primary-foreground bg-transparent text-primary-foreground hover:bg-primary-foreground/10 text-base font-semibold"
               onClick={handleShare}
             >
               <Share2 className="size-5 mr-2" />
@@ -341,10 +353,10 @@ export default function AboutPage() {
           <p className="mt-2">
             {t.contactEmail}:{" "}
             <a
-              href="mailto:a.tiling120@slmail.me"
+              href="mailto:shuttlelab.org@gmail.com"
               className="text-primary hover:underline underline-offset-4"
             >
-              a.tiling120@slmail.me
+              shuttlelab.org@gmail.com
             </a>
           </p>
         </div>

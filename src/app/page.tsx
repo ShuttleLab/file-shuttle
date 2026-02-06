@@ -11,6 +11,7 @@ import {
   AlertCircle,
   CloudUpload,
   Info,
+  Github,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -104,6 +105,15 @@ export default function Page() {
               {t("about")}
             </Link>
           </Button>
+          <a
+            href="https://github.com/ShuttleLab/file-shuttle"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="rounded-lg p-2 text-muted-foreground transition-colors hover:bg-accent hover:text-accent-foreground"
+            aria-label="GitHub"
+          >
+            <Github className="size-5" />
+          </a>
           <Button
             variant="outline"
             size="default"
