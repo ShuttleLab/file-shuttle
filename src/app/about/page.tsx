@@ -353,10 +353,10 @@ export default function AboutPage() {
           <p className="mt-2">
             {t.contactEmail}:{" "}
             <a
-              href="mailto:shuttlelab.org@gmail.com"
+              href="mailto:support@shuttlelab.org"
               className="text-primary hover:underline underline-offset-4"
             >
-              shuttlelab.org@gmail.com
+              support@shuttlelab.org
             </a>
           </p>
         </div>
