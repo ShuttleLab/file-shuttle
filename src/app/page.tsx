@@ -27,7 +27,7 @@ const translations: Record<
   Record<string, string>
 > = {
   zh: {
-    title: "文件穿梭机",
+    title: "ShuttleLab",
     tagline: "极速 · 安全 · 自动销毁",
     send: "发送",
     receive: "接收",
@@ -58,7 +58,7 @@ const translations: Record<
     about: "关于",
   },
   en: {
-    title: "File Shuttle",
+    title: "ShuttleLab",
     tagline: "Fast · Secure · Self-destruct",
     send: "Send",
     receive: "Receive",
@@ -98,29 +98,41 @@ export default function Page() {
   return (
     <div className="min-h-screen flex flex-col">
       <header className="border-b bg-card shadow-sm">
-        <div className="max-w-4xl mx-auto px-4 py-4 flex justify-end items-center gap-3">
-          <Button variant="outline" size="default" asChild>
-            <Link href="/about" className="flex items-center gap-2">
-              <Info className="size-5" />
-              {t("about")}
+        <div className="max-w-4xl mx-auto px-4 py-4 flex justify-between items-center gap-3">
+          <div className="flex-shrink-0">
+            <Link
+              href="https://shuttlelab.org"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-xl font-bold text-foreground hover:opacity-80 transition-opacity"
+            >
+              {t("title")}
             </Link>
-          </Button>
-          <a
-            href="https://github.com/ShuttleLab/file-shuttle"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="rounded-lg p-2 text-muted-foreground transition-colors hover:bg-accent hover:text-accent-foreground"
-            aria-label="GitHub"
-          >
-            <Github className="size-5" />
-          </a>
-          <Button
-            variant="outline"
-            size="default"
-            onClick={() => setLang(lang === "zh" ? "en" : "zh")}
-          >
-            {t("langButton")}
-          </Button>
+          </div>
+          <div className="flex items-center gap-3">
+            <Button variant="outline" size="default" asChild>
+              <Link href="/about" className="flex items-center gap-2">
+                <Info className="size-5" />
+                {t("about")}
+              </Link>
+            </Button>
+            <a
+              href="https://github.com/ShuttleLab/file-shuttle"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="rounded-lg p-2 text-muted-foreground transition-colors hover:bg-accent hover:text-accent-foreground"
+              aria-label="GitHub"
+            >
+              <Github className="size-5" />
+            </a>
+            <Button
+              variant="outline"
+              size="default"
+              onClick={() => setLang(lang === "zh" ? "en" : "zh")}
+            >
+              {t("langButton")}
+            </Button>
+          </div>
         </div>
       </header>
 
