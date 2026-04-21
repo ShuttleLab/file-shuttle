@@ -53,19 +53,13 @@ const translations = {
     use2: "跨设备传递文件，无需数据线",
     use3: "向他人发送私密文档",
     use4: "不想留下云盘记录的场景",
-    supportTitle: "支持我们",
+    supportTitle: "与君初相识，犹如故人归",
     supportDesc:
-      "文件穿梭机是一个免费服务，由站长个人维护。如果您觉得这个服务对您有帮助，欢迎通过以下方式支持我们：",
+      "文件穿梭机是一个免费服务，由站长个人维护。如果您觉得这个服务对您有帮助，欢迎分享给朋友：",
     contactDesc: "如有问题或建议，欢迎联系站长",
     contactEmail: "邮箱",
     shareButton: "分享给朋友",
     shareCopied: "已复制到剪贴板",
-    donateButton: "捐赠支持",
-    donateTitle: "捐赠支持",
-    donateDesc: "扫码或长按保存二维码，支持我们持续运营。",
-    wechat: "微信收款码",
-    alipay: "支付宝收款码",
-    paypal: "PayPal 收款码",
     close: "关闭",
   },
   en: {
@@ -95,19 +89,13 @@ const translations = {
     use2: "Transfer files across devices without cables",
     use3: "Send private documents to others",
     use4: "Scenarios where you prefer no cloud storage history",
-    supportTitle: "Support Us",
+    supportTitle: "Meeting you for the first time feels like the return of an old friend",
     supportDesc:
-      "File Shuttle is a free service maintained by the owner. If it helps you, consider supporting us:",
+      "File Shuttle is a free service maintained by the owner. If it helps you, consider share with Friends:",
     contactDesc: "For questions or feedback, contact the owner",
     contactEmail: "Email",
     shareButton: "Share with Friends",
     shareCopied: "Copied to clipboard",
-    donateButton: "Donate",
-    donateTitle: "Support Us",
-    donateDesc: "Scan or save the QR codes to support our service.",
-    wechat: "WeChat",
-    alipay: "Alipay",
-    paypal: "PayPal",
     close: "Close",
   },
 };
@@ -274,67 +262,8 @@ export default function AboutPage() {
                   className="bg-background text-foreground hover:bg-muted text-base font-semibold transition-transform duration-200 hover:scale-105 hover:shadow-lg active:scale-100"
                 >
                   <Heart className="size-5 mr-2" />
-                  {t.donateButton}
                 </Button>
               </DialogTrigger>
-              <DialogContent className="sm:max-w-2xl">
-                <DialogHeader>
-                  <DialogTitle>{t.donateTitle}</DialogTitle>
-                  <DialogDescription>{t.donateDesc}</DialogDescription>
-                </DialogHeader>
-                <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-                  <div className="border rounded-lg p-3">
-                    <p className="font-medium text-foreground mb-2 text-sm text-center">
-                      {t.wechat}
-                    </p>
-                    <div className="relative mx-auto size-40">
-                      <Image
-                        src="/wechat-qr.png"
-                        alt="微信收款码"
-                        fill
-                        sizes="160px"
-                        className="object-contain"
-                        priority
-                      />
-                    </div>
-                  </div>
-                  <div className="border rounded-lg p-3">
-                    <p className="font-medium text-foreground mb-2 text-sm text-center">
-                      {t.alipay}
-                    </p>
-                    <div className="relative mx-auto size-40">
-                      <Image
-                        src="/alipay-qr.png"
-                        alt="支付宝收款码"
-                        fill
-                        sizes="160px"
-                        className="object-contain"
-                        priority
-                      />
-                    </div>
-                  </div>
-                  <div className="border rounded-lg p-3">
-                    <p className="font-medium text-foreground mb-2 text-sm text-center">
-                      {t.paypal}
-                    </p>
-                    <div className="relative mx-auto size-40">
-                      <Image
-                        src="/paypal-qr.png"
-                        alt="PayPal 收款码"
-                        fill
-                        sizes="160px"
-                        className="object-contain"
-                        priority
-                      />
-                    </div>
-                  </div>
-                </div>
-                <DialogFooter>
-                  <DialogClose asChild>
-                    <Button variant="secondary">{t.close}</Button>
-                  </DialogClose>
-                </DialogFooter>
-              </DialogContent>
             </Dialog>
             <Button
               variant="outline"
