@@ -119,3 +119,4 @@ dist
 # Cloudflare Wrangler
 .wrangler
 .dev.vars
+*.md
