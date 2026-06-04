@@ -28,3 +28,8 @@ npm run dev            # http://localhost:3000
 ```
 
 `next.config.ts` rewrites `/api/:path*` to `http://localhost:8788` in dev.
+## License
+
+Licensed under the GNU Affero General Public License v3.0 — see [LICENSE](./LICENSE).
+
+Free to use, modify, and self-host. If you run a modified version as a network service, you must open-source your modifications (AGPL §13). For commercial licensing without copyleft obligations, contact support@shuttlelab.org.
