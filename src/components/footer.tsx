@@ -8,15 +8,21 @@ const CURRENT_HOST = "file.shuttlelab.org";
 const SIBLING_SITES: { name: string; host: string; featured?: boolean }[] = [
   { name: "Note Shuttle", host: "note.shuttlelab.org", featured: true },
   { name: "Status Shuttle", host: "status.shuttlelab.org", featured: true },
-  { name: "Calendar Shuttle", host: "calendar.shuttlelab.org" },
   { name: "Clipboard Shuttle", host: "clipboard.shuttlelab.org" },
-  { name: "Docx Shuttle", host: "docx.shuttlelab.org" },
-  { name: "Json Shuttle", host: "json.shuttlelab.org" },
-  { name: "Yaml Shuttle", host: "yaml.shuttlelab.org" },
-  { name: "Message Shuttle", host: "msg.shuttlelab.org" },
-  { name: "Music Shuttle", host: "music.shuttlelab.org" },
-  { name: "Nav Shuttle", host: "shuttlelab.org" },
   { name: "File Shuttle", host: "file.shuttlelab.org" },
+  { name: "JSON Shuttle", host: "json.shuttlelab.org" },
+  { name: "YAML Shuttle", host: "yaml.shuttlelab.org" },
+  { name: "Message Shuttle", host: "msg.shuttlelab.org" },
+  { name: "Calendar Shuttle", host: "calendar.shuttlelab.org" },
+  { name: "Docx Shuttle", host: "docx.shuttlelab.org" },
+  { name: "Image Shuttle", host: "image.shuttlelab.org" },
+  { name: "PDF Shuttle", host: "pdf.shuttlelab.org" },
+  { name: "Diff Shuttle", host: "diff.shuttlelab.org" },
+  { name: "QR Shuttle", host: "qr.shuttlelab.org" },
+  { name: "Base64 Shuttle", host: "base64.shuttlelab.org" },
+  { name: "URL Shuttle", host: "url.shuttlelab.org" },
+  { name: "Regex Shuttle", host: "regex.shuttlelab.org" },
+  { name: "Time Shuttle", host: "time.shuttlelab.org" },
 ];
 
 export default function Footer() {
