@@ -6,6 +6,7 @@ import { useI18n } from "@/lib/i18n";
 const CURRENT_HOST = "file.shuttlelab.org";
 
 const SIBLING_SITES: { name: string; host: string; featured?: boolean }[] = [
+  { name: "PPT Shuttle", host: "ppt.shuttlelab.org", featured: true },
   { name: "Note Shuttle", host: "note.shuttlelab.org", featured: true },
   { name: "Status Shuttle", host: "status.shuttlelab.org", featured: true },
   { name: "Clipboard Shuttle", host: "clipboard.shuttlelab.org" },
